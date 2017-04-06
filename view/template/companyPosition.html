@@ -1,0 +1,22 @@
+<div id="company-position">
+	<div app-company-info></div>
+	<div id="position-class">
+		<h2>职位分类</h2>
+		<button ng-click="doChange1()" ng-style="col1">{{company.positionClass[0].name}}</button>
+		<button ng-click="doChange2()" ng-style="col2">{{company.positionClass[1].name}}</button>
+	</div>
+	<div id="position-show" ng-hide="flag1">
+		<div>
+			<h3>{{company.positionClass[0].positionList[0].name}}</h3>
+			<h3>{{company.positionClass[0].positionList[0].createdDate}}</h3>
+		</div>
+		<span>{{company.positionClass[0].positionList[0].salary}}</span>
+	</div>
+	<div id="position-show" ng-hide="flag2">
+		<div>
+			<h3>{{company.positionClass[1].positionList[0].name}}</h3>
+			<h3>{{company.positionClass[1].positionList[0].createdDate}}</h3>
+		</div>
+		<span>{{company.positionClass[1].positionList[0].salary}}</span>
+	</div>
+</div>

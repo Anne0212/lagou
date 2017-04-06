@@ -1,0 +1,24 @@
+<form id="regist-main" action="" method="get">
+	<div id="regist-top">
+        <div>
+            <span><i class="iconfont icon-geren"></i></span>
+            <input type="text" placeholder="输入手机号" ng-model="phone" ng-blur="checkPhone()">
+            <span ng-bind="tipPhone"></span>
+        </div>
+        <div>
+            <span><i class="iconfont icon-mima"></i></span>
+            <input type="password" placeholder="设置6位以上的密码" ng-model="pwd" ng-blur="checkPwd()">
+            <span ng-bind="tipPwd"></span>
+        </div>
+    </div>
+    <div id="regist-code">
+    	<input type="text" placeholder="短信验证码" ng-model="codes" ng-blur="checkCode()">
+    	<button ng-click="doSend()" id="sendInfo">发送信息</button>
+        <span ng-bind="tipCode"></span>
+    	<span id="yzcodes" ng-hide="flag1"></span>
+    </div>
+    <div id="regist-bottom">
+    	<button ui-sref="login">登录</button>
+    	<button ng-click="checkRegist()">注册</button>
+    </div>
+</form>

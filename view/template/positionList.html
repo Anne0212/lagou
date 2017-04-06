@@ -1,0 +1,12 @@
+<div id="position-list">
+	<ul>
+		<li  ui-sref="position({id: item.id})" ng-repeat="item in list|filterByObj:filterObj">
+			<img ng-src="{{item.imageUrl}}" alt="">
+			<div>
+				<h3><a>{{item.companyName}}[{{item.cityName}}] {{item.industryName}} {{item.scaleName}}</a></h3>
+				<h4>{{item.salaryName}}</h4>
+				<h3>{{item.date}}</h3>
+			</div>
+		</li>
+	</ul>
+</div>

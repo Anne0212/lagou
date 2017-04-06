@@ -1,0 +1,9 @@
+<div id="me-login">
+	<div id="me-top" ng-show="lAfter">
+		<img src="../images/head.png">
+		<p ng-bind="loginName"></p>
+		<button ui-sref='deliver'>投递</button>
+		<button ui-sref='collect'>收藏</button>
+	</div>
+	<button ng-bind="btnContent" ng-class="col" ng-click="doClick()"></button>
+</div>

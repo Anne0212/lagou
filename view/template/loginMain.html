@@ -1,0 +1,17 @@
+<div id="login-main">
+    <div id="login-top">
+        <div>
+            <span><i class="iconfont icon-geren"></i></span>
+            <input type="text" placeholder="输入手机号" ng-model="loginPhone">
+        </div>
+        <div>
+            <span><i class="iconfont icon-mima"></i></span>
+            <input type="password" placeholder="输入密码" ng-model="loginPwd">
+        </div>
+        <span ng-hide="flag">用户名和密码不一致</span>
+    </div>
+    <div id="login-bottom">
+    	<button ng-click="loginTo()">登录</button>
+    	<button ui-sref="regist">注册</button>
+    </div>
+</div>

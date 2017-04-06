@@ -1,0 +1,10 @@
+<div id="search-tab">
+	<ul>
+		<li class="{{item.id==tabId?'hover':''}}" ng-repeat="item in list" ng-bind="item.name" ng-click="tabClick(item)"></li>
+
+		<!--自己的方法-->
+		<!-- <li ng-click="doSelect1()" ng-class="sty1">城市</li>
+		<li ng-click="doSelect2()" ng-class="sty2">薪水</li>
+		<li ng-click="doSelect3()" ng-class="sty3">公司规模</li> -->
+	</ul>
+</div>

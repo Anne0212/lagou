@@ -1,0 +1,10 @@
+<div id="deliver-tab">
+	<ul>
+		<li ng-repeat="item in list" ng-click="click(item)" ng-bind="item.name" class="{{selectId===item.id?'hover':''}}"></li>
+	</ul>
+	<!-- <ul>
+		<li ng-click="doSelect1()" ng-class="sty1">全部</li>
+		<li ng-click="doSelect2()" ng-class="sty2">面试邀请</li>
+		<li ng-click="doSelect3()" ng-class="sty3">不合适</li>
+	</ul> -->
+</div>

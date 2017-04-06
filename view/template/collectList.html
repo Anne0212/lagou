@@ -1,0 +1,16 @@
+<div id="collect-list">
+	<ul>
+		<li ng-repeat="item in collects">
+			<img ng-src="{{item.imageUrl}}" alt="">
+			<div>
+				<h3><a>{{item.companyName}}[{{item.cityName}}] {{item.industryName}} {{item.scaleName}}</a></h3>
+				<h4>{{item.salaryName}}</h4>
+				<h3>{{item.date}}</h3>
+				<img src="../images/star.png" ng-show="star" ng-click="changeStar()">
+				<img src="../../images/star-active.png" ng-show="star2" ng-click="changeStar2()">
+			</div>
+			
+			<!-- <img src="../../images/star-active.png" ng-show="star2" ng-click="changeStar2()"> -->
+		</li>
+	</ul>
+</div>
